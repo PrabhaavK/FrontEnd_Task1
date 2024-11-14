@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="RegistrationPagecss.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration Portal</h1>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2><center>Register Here</center></h2>
+            <form>
+               
+                <div class="input-group">
+                    <label for="firstname">Firstname:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="input-group">
+                    <label for="lastname">Lastname:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+
+                
+                <div class="input-group radio-group">
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male" style="margin:4px">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female"style="margin:4px">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other"style="margin:4px">Other</label>
+                </div>
+
+                
+                <div class="input-group">
+                    <label for="city">City:</label>
+                    <select id="city" name="city" required>
+                        <option value="">Select Your City</option>
+                        <option value="New York">New York</option>
+                        <option value="London">London</option>
+                        <option value="Sydney">Sydney</option>
+                        
+                    </select>
+                </div>
+
+                
+                <div class="input-group checkbox-group">
+                    <label>Courses:</label>
+                    <input type="checkbox" id="OPPS" name="courses[]" value="OPPS">
+                    <label for="math">OPPS</label>
+                    <input type="checkbox" id="CSharp" name="courses[]" value="CSharp">
+                    <label for="science">CSharp</label>
+                    <input type="checkbox" id="SQL" name="courses[]" value="SQl">
+                    <label for="history">SQL</label>
+                </div>
+
+                
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+
+               
+                <div class="input-group">
+                    <label for="qualification">Highest Qualification:</label>
+                    <select id="qualification" name="qualification" required>
+                        <option value="">Select Your Highest Qualification</option>
+                        <option value="highschool">High School</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                        
+                    </select>
+                </div>
+
+                
+                <div class="input-group">
+                    <center><button type="submit" onclick="window.alert('Student Registered Succesfully')">Register</button></center>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; All Rights are Reserved by PrabhaavK PVT LTD .</p>
+    </footer>
+</body>
+</html>
